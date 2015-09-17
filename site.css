@@ -1,6 +1,6 @@
 
 body {
-	background-color: lawngreen;
+	background-color: forestgreen;
 	font-family: Courier New, Courier, monospace;
 	font-size: 12px;
 }
@@ -10,8 +10,11 @@ body {
     width: auto;
 }
 .panel-heading {
-	background-color: darkblue;
-	font-color: #999;
+	font-size: 3em;
+	font-weight: 1200 !important;
+	background-color: darkblue !important;
+	color: #999 !important;
+	font-color: #999 !important;
 }
 .player-card {
 	display: inline-block;

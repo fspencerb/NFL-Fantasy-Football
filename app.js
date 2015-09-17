@@ -27,12 +27,12 @@
         });
 
 
-        $("#removePlayer").on('click', function () {
+        $("#removePlayer").on('click',function(){
 
-            var html = '<div class="player-card">' +
-          '<div>' +
-          '<div style="text-align:center"><button type="button" class="btn btn-danger btn-xs" id="removePlayer">Remove</button></div>' +
-            '<image src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/"></image>' +
+           var html = '<div class="player-card">' +
+               '<div>' +
+                  '<div style="text-align:center"><button type="button" class="btn btn-danger btn-xs" id="removePlayer">Remove</button></div>' +
+               '<image src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/"></image>' +
           '</div>' +
           '<div>' +
             '<span>' + (name) + '</span>' +
@@ -44,5 +44,5 @@
             '<span>' + (number) + '</span>' +
           '</div>' +
         '</div>';
-            $(".player-card").prepend(html);
+            $(".player-card").prepend(".player-card");
         });
