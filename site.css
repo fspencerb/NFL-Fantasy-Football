@@ -1,0 +1,27 @@
+
+body {
+	background-color: lawngreen;
+	font-family: Courier New, Courier, monospace;
+	font-size: 12px;
+}
+.panel-body {
+	background-color: lightblue;
+	border: width 5px;
+    width: auto;
+}
+.panel-heading {
+	background-color: darkblue;
+	font-color: #999;
+}
+.player-card {
+	display: inline-block;
+	border: 1px solid black;
+	margin: 8px;
+	box-shadow: 10px 10px 5px #888888;
+	border-radius: 15px;
+	background-color: #eeeeee;
+	padding: 6px;
+}
+.player-form {
+    align-content: center:
+}
