@@ -11,7 +11,7 @@ body {
 }
 .panel-heading {
 	font-size: 3em;
-	font-weight: 1200 !important;
+	font-weight: 900 !important;
 	background-color: darkblue !important;
 	color: #999 !important;
 	font-color: #999 !important;
@@ -26,5 +26,10 @@ body {
 	padding: 6px;
 }
 .player-form {
-    align-content: center:
+    align-content: center;
+}
+.AddPlayer-title {
+	font: bold;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 2em;
 }
