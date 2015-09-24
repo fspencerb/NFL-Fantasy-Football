@@ -1,3 +1,20 @@
+var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+body = document.body;
+ var showLeft = $('#showLeft');
+ var classie = $('#classie')
+showLeft.on('click', function() {
+  classie.toggle( this, 'active' );
+  classie.toggle( menuLeft, 'cbp-spmenu-open' );
+  disableOther( 'showLeft' );
+});
+ 
+function disableOther( button ) {
+  if( button !== 'showLeft' ) {
+    classie.toggle( showLeft, 'disabled' );
+  }
+}
+
+
 // var PlayersService = function(endpointUri){
 // 	
 // 	var playersData = [];
@@ -147,10 +164,33 @@ var playerService = function () {
   }
 }
 
+
+
 var ps = playerService();
 
 ps.loadPlayers(function () {
- console.log('request done')
+
+// needs to be within the API retriever PlayerService but, where?
+// $('#APIlist').load(function(e) {
+//   e.preventDefault();
+//   $('#APIlist').parent().append();
+  
+//   var APIname = $('#playerAPIName').val();
+//   var APIposition = $('#playerAPIPosition').val();
+//   var APInum = $('#playerAPINum').val();
+// // need to iterate through each player by putting the players in an array 
+// // and using foreach adding 1 (Do I need to put unique "id"s to each player?) 
+// // put an add button next to each player and link it to the list.
+
+  var players = ps.getPlayers();
+  players.forEach(function(player){
+    var html = '<tr><td><button class="btn btn-success"><i class="glyphicon glyphicon-plus-sign"></i></button></td>' +
+             '<td>' + player.fullname + '</td>' +
+             '<td>' + player.position + '</td>' +
+             '<td>' + player.jersey + '</td><tr>';
+   $('#APIlist').append(html);  
+  })
+  
 });
 $('#addPlayer').on('click', function (e) {
   e.preventDefault();
