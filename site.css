@@ -1,13 +1,13 @@
 
 body {
-	background-image: url("nfl-fantasy-football.jpg");
+	background-image: url("images/nfl-fantasy-football.jpg");
     background-repeat: repeat-y;
 	font-family: Courier New, Courier, monospace;
 	font-size: 12px;
 }
 .panel-body {
-	background-image: url("football-field.jpg");
-	border: width 5px;
+	background-image: url("images/football-field.jpg");
+	border: width 100%;
     width: auto;
 }
 .cbp-spmenu {
