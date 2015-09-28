@@ -1,12 +1,13 @@
 
 body {
 	background-image: url("images/nfl-fantasy-football.jpg");
-    background-repeat: repeat-y;
+    background-repeat: repeat;
 	font-family: Courier New, Courier, monospace;
 	font-size: 12px;
 }
 .panel-body {
 	background-image: url("images/football-field.jpg");
+	background-size: 100% 100%;
 	border: width 100%;
     width: auto;
 }
