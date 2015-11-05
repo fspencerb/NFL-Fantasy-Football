@@ -1,0 +1,26 @@
+{
+  "name": "NFL Fantasy Football",
+  "homepage": "https://github.com/fspencerb/NFL-Fantasy-Football",
+  "authors": [
+    "Spencer Buster <fspencerb@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "NFL",
+    "Roster"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7"
+  }
+}
